@@ -1,21 +1,17 @@
 <?php
-$host = getenv("MYSQLHOST") ?: "localhost";
-$port = getenv("MYSQLPORT") ?: "3306";
-$database = getenv("MYSQLDATABASE") ?: "library_db";
-$user = getenv("MYSQLUSER") ?: "root";
-$password = getenv("MYSQLPASSWORD") ?: "";
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "library_db";
 
-try {
-    $conn = new PDO(
-        "mysql:host=$host;port=$port;dbname=$database;charset=utf8mb4",
-        $user,
-        $password
-    );
+// Подключение к базе данных
+$conn = new mysqli($host, $user, $password, $database);
 
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-} catch (PDOException $e) {
-    die("Ошибка подключения к базе данных: " . $e->getMessage());
+// Проверка подключения
+if ($conn->connect_error) {
+    die("Ошибка подключения: " . $conn->connect_error);
 }
+
+// Устанавливаем кодировку UTF-8
+$conn->set_charset("utf8");
 ?>
