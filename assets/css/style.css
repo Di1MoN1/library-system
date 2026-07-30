@@ -1,0 +1,167 @@
+body{
+    background:#f4f6f9;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   BOOK CARDS
+========================== */
+
+.book-card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#fff;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+.book-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 16px 35px rgba(0,0,0,.18);
+
+}
+
+.book-cover{
+
+    height:420px;
+
+    padding:20px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.book-image{
+
+    max-width:100%;
+
+    max-height:100%;
+
+    object-fit:contain;
+
+}
+
+.book-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    min-height:60px;
+
+    margin-bottom:18px;
+
+}
+
+.book-info{
+
+    font-size:16px;
+
+    color:#555;
+
+}
+
+.book-info p{
+
+    margin-bottom:14px;
+
+}
+
+.badge{
+
+    padding:10px;
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   ADMIN DASHBOARD
+========================== */
+
+.dashboard-card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    color:#fff;
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.gradient-blue{
+    background:linear-gradient(135deg,#0d6efd,#4dabf7);
+}
+
+.gradient-green{
+    background:linear-gradient(135deg,#198754,#43c59e);
+}
+
+.gradient-orange{
+    background:linear-gradient(135deg,#fd7e14,#ffc107);
+}
+
+.gradient-red{
+    background:linear-gradient(135deg,#dc3545,#ff6b81);
+}
+
+.dashboard-number{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.dashboard-title{
+    font-size:18px;
+    opacity:.95;
+}
+
+.quick-action .btn{
+    border-radius:12px;
+    padding:12px;
+}
+
+.quick-action .btn:hover{
+    transform:scale(1.03);
+}
+
+.list-group-item{
+    border:none;
+    border-bottom:1px solid #ececec;
+}
+
+footer{
+    margin-top:60px;
+}
