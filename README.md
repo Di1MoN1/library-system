@@ -55,36 +55,44 @@
 
 ## 📂 Структура проекта
 
+```text
 library-system/
-├── admin/                     — панель администратора
-│   ├── reports/                   — отчёты (популярные книги, активные читатели, статистика, просрочки)
-│   ├── requests/                  — обработка заявок читателей (approve/reject/issue)
-│   ├── settings/                  — настройки библиотеки (срок выдачи)
-│   └── index.php                  — дашборд со статистикой и графиком
+├── admin/                     # Панель администратора
+│   ├── reports/               # Отчёты (популярные книги, активные читатели, статистика, просрочки)
+│   ├── requests/              # Обработка заявок читателей
+│   ├── settings/              # Настройки библиотеки
+│   └── index.php              # Dashboard
 ├── assets/
-│   ├── css/style.css              — единый стиль проекта
-│   ├── images/                    — обложки книг (20 файлов)
+│   ├── css/style.css          # Единый стиль проекта
+│   ├── images/                # Обложки книг
 │   └── js/script.js
-├── authors/                   — CRUD авторов
-├── books/                     — CRUD книг + каталог + страница книги
-├── borrowings/                — журнал выдач (выдать/вернуть/удалить)
-├── config/db.php              — подключение к БД
-├── database/library_db.sql    — дамп структуры БД (сейчас пустой ⚠️)
-├── genres/                    — CRUD жанров
-├── includes/                  — общие部分и: header, navbar (с уведомлениями), footer, book-card, functions
-├── overdue/                   — список просроченных книг
-├── reader/                    — личный кабинет читателя
-│   ├── catalog.php, book.php      — каталог и страница книги для читателя
-│   ├── my_books.php, requests.php — мои книги / мои заявки
-│   ├── profile.php                — личный кабинет
-│   ├── register.php, login.php    — регистрация / вход читателя
-│   └── request.php, request_return.php — заявки на выдачу/возврат
-├── readers/                   — CRUD читателей (со стороны админа)
-├── return_requests/           — заявки на возврат (обработка админом)
-├── users/                     — управление администраторами (superadmin)
-├── README.md                  — уже есть в проекте
-├── index.php                  — публичный каталог (доступен без входа)
-├── login.php / logout.php     — вход/выход администратора
+├── authors/                   # CRUD авторов
+├── books/                     # CRUD книг и каталог
+├── borrowings/                # Журнал выдач
+├── config/
+│   └── db.php                 # Подключение к БД
+├── database/
+│   └── library_db.sql         # Структура базы данных
+├── genres/                    # CRUD жанров
+├── includes/                  # Общие компоненты
+├── overdue/                   # Просроченные книги
+├── reader/                    # Личный кабинет читателя
+│   ├── catalog.php
+│   ├── book.php
+│   ├── my_books.php
+│   ├── requests.php
+│   ├── profile.php
+│   ├── register.php
+│   ├── login.php
+│   ├── request.php
+│   └── request_return.php
+├── readers/                   # CRUD читателей
+├── return_requests/           # Заявки на возврат
+├── users/                     # Управление администраторами
+├── README.md
+├── index.php
+├── login.php
+└── logout.php
 ```
 
 ---
